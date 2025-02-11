@@ -15,7 +15,7 @@ app.use(session({
     secret: process.env.SECRET_KEY,
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: false, maxAge: 300000 }
+    cookie: { secure: false }
 }))
 
 app.use(bodyParser.urlencoded({ extended: true }));
